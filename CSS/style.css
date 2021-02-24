@@ -1,0 +1,57 @@
+/* base classes */
+.flex {
+    display: flex;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.helvetica {
+    font-family: 'Helvetica',sans-serif;
+}
+/* <----header----> */
+
+/* navigation and navigation's child elements*/
+
+.header-container {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #F6F8F9;
+}
+
+.navigation {
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 90px;
+    font-weight: bold;
+}
+
+.navigation li {
+    margin-left: 22px;
+}
+
+.navigation a {
+    color: #A6ADB4
+}
+
+.navigation span {
+    color: #343638;
+}
+
+.header-container img {
+    position: absolute;
+    right: 20px;
+}
+
+.header-container h4 {
+    position: absolute;
+    left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FA6980;
+}
