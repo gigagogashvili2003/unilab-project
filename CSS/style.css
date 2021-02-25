@@ -237,3 +237,62 @@ body {
 }
 
 /* section3 */
+.section3 {
+    margin-bottom: 100px;
+}
+
+.section3-container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section3-container-wraper {
+    width: 100%;
+}
+
+.section3-left-block {
+    max-width: 760px;
+    width: 100%;
+    margin-right: 40px;
+}
+.section3-left-top-block {
+    position: relative;
+}
+
+.city-title {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.section3-block-on-image {
+    width: 680px;
+    height: 102px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+.lorem-color {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.margin-from-top-block {
+    margin-bottom: 40px;
+}
+
+.section3-right-block {
+    width: 100%;
+}
+
+/* section3 right block */
+
+.elephant-img {
+    margin-bottom: 20px;
+}
+.section3-right-blocks-margin {
+    margin: 40px 0px 40px 0px;
+}
