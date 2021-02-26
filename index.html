@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>მთავარი</title>
-        <script src="https://kit.fontawesome.com/b3b21e6ed9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/reset.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/style.css">
+        <script src="https://kit.fontawesome.com/b3b21e6ed9.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- header -->
@@ -40,7 +40,8 @@
             <div class="section1-container">
                 <!-- left - block -->
                 <div class="section1-left-block">
-                        <img class="rock-img" src="images/rock.png" alt="rocks">
+                        <!-- <div class="rock-img"></div> -->
+                        <img class="rock-img" src="images/rock.png" alt="rock">
                         <div class="section1-titles-on-img">
                             <h1>WORLD NEWS</h1>
                             <div class="white-line"></div>
@@ -50,9 +51,9 @@
                         </div>
                 </div>
                 <!-- right  - block -->
-                <div class="section1-right-block flex">
+                <div class="section1-right-block">
+                    <div class="section1-more-news">more news</div>
                     <div class="right-block-titles">
-                        <div class="section1-more-news">more news</div>
                         <div class="travel-block">
                             <h3 class="travel-title">travel</h3>
                             <h4 class="article-title">Article title</h4>
@@ -78,7 +79,7 @@
             <div class="section2-container">
                 <h3 class="section2-trending-title">trending</h3>
                 <div class="section2-horizontal flex">
-                    <div class="section2-left-block">
+                    <div class="section2-left-block margin111">
                         <img class="lake-img" src="images/lake.png" alt="lake">
                         <div class="section2-titles">
                             <h4 class="article-title">Dolore magna aliqua</h4>
@@ -98,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section2-left-block">
+                    <div class="section2-left-block section2-right-block">
                         <img class="lake-img" src="images/climbers.png" alt="climbers">
                         <div class="section2-titles">
                             <h4 class="article-title">Morbi eleifend a libero</h4>
@@ -155,7 +156,7 @@
                                 <i class="far fa-clock"><span class="clock-title">4h ago by Days</span></i>
                             </div>
                         </div>
-                        <div class="section3-right-top-block">
+                        <div class="section3-right-top-block none">
                             <img class="elephant-img" src="images/road-on-mountain.png" alt="road">
                             <h3 class="article-title">Small title</h3>
                             <div class="clock-block">
@@ -192,19 +193,21 @@
                     </div>
                 </div>
                 <!-- email input  -->
-                <div class="footer-middle-block">
-                    <form>
-                        <input type="email" id="email" name="yourMail" placeholder="Email">
-                        <i class="fas fa-paper-plane"></i>
-                    </form>
-                    <p class="title-under-form">Stay in touch with us for the freshest products!</p>
-                </div>
-                <!-- social link's icons such as instagram, facebook...etc -->
-                <div class="footer-right-block flex">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fas fa-globe-americas"></i></a>
+                <div class="footer-second-block flex">
+                    <div class="footer-middle-block">
+                        <form>
+                            <input type="email" id="email" name="yourMail" placeholder="Email">
+                            <i class="fas fa-paper-plane"></i>
+                        </form>
+                        <p class="title-under-form">Stay in touch with us for the freshest products!</p>
+                    </div>
+                    <!-- social link's icons such as instagram, facebook...etc -->
+                    <div class="footer-right-block flex">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fas fa-globe-americas"></i></a>
+                    </div>
                 </div>
             </div>
         </footer>
