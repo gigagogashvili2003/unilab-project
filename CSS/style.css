@@ -371,3 +371,141 @@ body {
     color: #FFFFFF;
 }
 /* ended main page */
+
+/* contact html */
+.contact-section1 {
+    margin-bottom: 40px;
+}
+
+.contact-container1 {
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 1000px;
+    margin-top: 42px;
+}
+
+.contact-container1-left-block {
+    width: 50%;
+}
+.house-icon-block {
+    width: 199px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 42px;
+    
+}
+
+.fa-home {
+    font-size: 20px;
+    color: #202124;
+    cursor: pointer;
+}
+.story-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #202124;
+}
+.contact-world-news-title {
+    font-size: 13px;
+    color: #A6ADB4;
+    text-transform: uppercase;
+}
+
+.slash {
+    color: #202124;
+    margin-right: 10px;
+}
+.contact-mountain-img {
+    width: 100%;
+    position: relative;
+}
+.contact-titles-on-image {
+    position: absolute;
+    width: 360px;
+    height: 190px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-mountain-img h1 {
+    font-size: 32px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.contact-mountain-img p {
+    text-align: center;
+    color: #FFFFFF;
+}
+/* contact right block  */
+.contact-container1-right-block {
+    width: 50%;
+    height: 500px;
+    background: #FFFFFF;
+    margin-top: 62px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-forms {
+    width: 360px;
+}
+/* date  - block */
+.input-date-block {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.select-input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #EBEDED;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.select-input:focus {
+    outline: none;
+}
+.input-relative {
+    position: relative;
+}
+
+.fa-caret-down {
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    color: #A6ADB4;
+    cursor: pointer;
+}
+
+.select-input::placeholder {
+    color: #A6ADB4;
+    padding-left: 20px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+/* input for keyword */
+.input-text-block {
+    flex-direction: column;
+}
+
+.contact-forms label{
+    font-family: 'Helvetica',sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #202124;
+}
+.contact-forms a div{
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+
+
