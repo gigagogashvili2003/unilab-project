@@ -547,6 +547,31 @@ body {
     font-size: 13px;
 }
 
+/* contact third section  */
+
+.contact-section3-container {
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 161px;
+    border-bottom: 2px solid #EBEDED;
+}
+
+.contact-under-elephant-block {
+    width: 760px;
+    margin-top: 40px;
+    color: #A6ADB4;
+    font-size: 14px;
+}
+
+.contact-p-margin {
+    margin-bottom: 25px;
+}
+
+.contat-p-margin2{
+    padding-bottom: 40px;
+}
+
+/* ended main page */
 
 
 
