@@ -13,28 +13,25 @@
     </head>
     <body>
         <!-- header -->
-        <header class="header">
-            <div class="header-container">
-                <h4 class="helvetica">logo</h4>
-                <!-- navigation -->
-                <nav class="navigation helvetica">
-                    <ul class="flex">
-                        <li>
-                            <a href="#"><span>home</span></a>
-                        </li>
-                        <li>
-                            <a href="#">discovery</a>
-                        </li>
-                        <li>
-                            <a href="#">photos</a>
-                        </li>
-                        <li>
-                            <a href="#">contact</a>
-                        </li>
+        <header class="header-wraper">
+            <div class="wrapper helvetica">
+                <nav class="wrapper helvetica">
+                    <ul class="logo">
+                        <a href="#"> LOGO </a>
                     </ul>
+                    <ul id="menu" class="menu-ul">
+                        <li ><a class="nav-a1 nav-a" href="#">HOME</a></li>
+                        <li><a class="nav-a2 nav-a" href="#">DISCOVERY</a></li>
+                        <li><a class="nav-a3 nav-a" href="#">PHOTOS</a></li>
+                        <li><a class="nav-a4 nav-a" href="#">CONTACT</a></li>
+                        <li><a class="nav-a5 nav-a photos-a" href="#">PHOTOS</a></li>
+                    </ul>
+                    <img class="girls-face" src="images/girls-face.svg" alt="girls-face">
+                    <div id="burger-menu" class="burger-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </nav>
-                <img src="images/girls-face.svg" alt="girls-face">
-            </div>
+            </div>       
         </header>
         <!-- contact first section -->
         <section class="contact-section1">
@@ -168,5 +165,7 @@
             </div>
         </footer>
         <!-- main page ended :) -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="JS/script.js"></script>
     </body>
 </html>

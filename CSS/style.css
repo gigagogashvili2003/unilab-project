@@ -13,46 +13,44 @@ body {
 /* <----header----> */
 
 /* navigation and navigation's child elements*/
-
-.header-container {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
+.header-wraper{
+    background: #F6F8F9;
     position: relative;
 }
-
-.navigation {
-    font-size: 14px;
-    text-transform: uppercase;
-    position: absolute;
-    right: 90px;
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.navigation li {
-    margin-left: 22px;
-}
-
-.navigation a {
-    color: #A6ADB4
-}
-
-.navigation span {
-    color: #343638;
-}
-
-.header-container img {
-    position: absolute;
-    right: 20px;
-}
-
-.header-container h4 {
-    position: absolute;
-    left: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
+.logo a {
     color: #FA6980;
 }
+
+.nav-a{
+    color: #A6ADB4;
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'Helvetica',sans-serif;
+    font-weight: bold;
+}
+.photos-a {
+    display: none;
+}
+ul{
+    padding: 20px 0;
+    display: flex;
+}
+.burger-icon {
+    background-color: black;
+    display: none;
+}
+.nav-a1 {
+    color: black;
+}
+
 
 /* section1 */
 .section1 {
@@ -211,8 +209,12 @@ body {
 }
 
 .section2-left-block {
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     background: #FFFFFF;
+}
+.lake-img {
+    width: 100%;
 }
 
 .section2-trending-title {
@@ -260,8 +262,11 @@ body {
     margin-right: 40px;
 }
 .section3-left-top-block {
+    width: 100%;
     position: relative;
 }
+
+
 
 .city-title {
     max-width: 528px;
@@ -298,6 +303,7 @@ body {
 /* section3 right block */
 
 .elephant-img {
+    width: 100%;
     margin-bottom: 20px;
 }
 .section3-right-blocks-margin {
@@ -400,9 +406,9 @@ body {
 .contact-container1-left-block {
     width: 50%;
 }
+
 .house-icon-block {
-    max-width: 199px;
-    width: 100%;
+    width: 200%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -414,16 +420,20 @@ body {
     font-size: 20px;
     color: #202124;
     cursor: pointer;
+    margin-right: 30px;
 }
 .story-title {
     font-size: 13px;
     text-transform: uppercase;
     color: #202124;
+    margin: 5px 30px 0px 0px;
+
 }
 .contact-world-news-title {
     font-size: 13px;
     color: #A6ADB4;
     text-transform: uppercase;
+    margin-top: 5px;
 }
 
 .slash {
@@ -462,7 +472,7 @@ body {
     width: 50%;
     height: 500px;
     background: #FFFFFF;
-    margin-top: 62px;
+    margin-top: 84px;
     align-items: center;
     justify-content: center;
 }
@@ -577,6 +587,9 @@ body {
     margin: 0 auto;
     margin-bottom: 161px;
     border-bottom: 2px solid #EBEDED;
+}
+.elephant2-img {
+    width: 100%;
 }
 
 .contact-under-elephant-block {
@@ -826,3 +839,82 @@ body {
     }
 
 }
+
+/* Responsive */
+
+@media (max-width: 768px){
+    /* body {
+        overflow-x: hidden;
+    } */
+    .wrapper, 
+    ul{
+      display: block;
+      text-align: left;
+    }   
+    .nav-a{
+      display: block;
+      margin-left: 60px;
+    }  
+    .social-icons{
+      display: flex;
+      justify-content: center; 
+    } 
+    .logo{
+      text-align: left;
+      margin-left: 30px;
+    }
+    .burger-icon{
+      color: #fff;
+      display: block;
+      font-size: 30px;
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      cursor:pointer;
+    }
+    .active  {
+        height: 100vh;
+    }
+    .active-1 {
+        display: none;
+    }
+    .menu-ul,
+    .social-icons{
+      display: none;
+    }   
+    .menu-ul.open-menu{
+      display: block;
+    } 
+    .social-icons.open-socicon{
+      display: flex;
+    } 
+    .girls-face {
+        display: none;
+    }
+    .nav-a1::before {
+        content: url(../images/house.svg);
+        margin-left: -30px;
+        margin-right: 30px;
+    }
+    .nav-a2::before {
+        content: url(../images/discover.svg);
+        margin-left: -30px;
+        margin-right: 30px;
+    }
+    .nav-a3::before {
+        content: url(../images/photos.svg);
+        margin-left: -30px;
+        margin-right: 30px;
+    }
+    .nav-a4::before {
+        content: url(../images/mail.svg);
+        margin-left: -30px;
+        margin-right: 30px;
+    }
+    .nav-a5::before {
+        content: url(../images/girls-face.svg);
+        vertical-align: middle;
+        margin-left: -30px;
+        margin-right: 18px;
+    }
+  }
