@@ -6,30 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>მთავარი</title>
         <script src="https://kit.fontawesome.com/b3b21e6ed9.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/fonts.css">
         <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
     </head>
     <body>
         <!-- header -->
         <header class="header-wraper">
+            <div class="wifi-battery-time-block flex helvetica">
+                <div class="current-date" id="date"></div>
+                <div class="time-block" id="clock"></div>
+                <div class="wifi-battery-block">
+                    <img src="images/celluar.svg" alt="celluar">
+                    <img src="images/wifi.svg" alt="wifi">
+                    <img src="images/battery.svg" alt="battery">
+                </div>
+            </div>
             <div class="wrapper helvetica">
                 <nav class="wrapper helvetica">
                     <ul class="logo">
-                        <a href="#"> LOGO </a>
+                        <a href="index.html"> LOGO </a>
+                        <a href="#"><img class="avatar-svg" src="images/avatar.svg" alt="avatar"></a>
                     </ul>
                     <ul id="menu" class="menu-ul">
-                        <li ><a class="nav-a1 nav-a" href="#">HOME</a></li>
+                        <li ><a class="nav-a1 nav-a" href="index.html">HOME</a></li>
                         <li><a class="nav-a2 nav-a" href="#">DISCOVERY</a></li>
                         <li><a class="nav-a3 nav-a" href="#">PHOTOS</a></li>
                         <li><a class="nav-a4 nav-a" href="#">CONTACT</a></li>
                         <li><a class="nav-a5 nav-a photos-a" href="#">PHOTOS</a></li>
                     </ul>
-                    <img class="girls-face" src="images/girls-face.svg" alt="girls-face">
                     <div id="burger-menu" class="burger-icon">
-                        <i class="fas fa-bars"></i>
+                        <img src="images/menu-icon.svg" alt="menu-icon">
                     </div>
+                    <img class="girls-face" src="images/girls-face.svg" alt="girls-face">
+
                 </nav>
             </div>       
         </header>
@@ -40,6 +51,7 @@
                     <div class="house-icon-block">
                         <div class="icon-block-left flex">
                             <i class="fas fa-home"></i>
+                            <a href="index.html"><img class="arrow" src="images/arrow.svg" alt="arrow"></a>
                             <div class="story-title helvetica">story</div>
                             <div class="contact-world-news-title helvetica"><span class="slash">/</span> world news</div>
                         </div>
@@ -82,7 +94,7 @@
                     <h3>Phasellus eu nulla malesuada, luctus diam.</h3>
                 </div>
                 <div class="big-p-block">
-                    <div class="contact-container2-left-block">
+                    <div class="contact-container2-left-block contact-container2-left-margin">
                         <p>Dignissim rutrum ridiculus lacinia phasellus torquent ad aliquet, nisi dictum cubilia class habitasse commodo, semper potenti nec ac per egestas. Ac volutpat ullamcorper phasellus montes sollicitudin litora ridiculus mi conubia inceptos euismod odio curabitur, tortor eros porta venenatis facilisis quam blandit in ut lobortis consequat justo. Hac libero quisque tortor conubia iaculis </p>
                     </div>
                     <div class="contact-container2-left-block">
@@ -106,6 +118,7 @@
                 </div>
                 <div class="contact-tablet-display-on helvetica">In hac habitasse platea dictumst. Sed nec venenatis odio. Nulla faucibus ipsum sed faucibus accumsan. Donec rhoncus luctus.</div>
             </div>
+            <!-- animated, when mouse is focused :) -->
             <div class="weekdays flex helvetica">
                 <h4 class="weekdays-span" style="color: #202124">1</h4>
                 <h4>2</h4>
@@ -126,7 +139,7 @@
                 <div class="footer-left-block flex">
                     <h4 class="footer-logo-title helvetica">logo</h4>
                     <!-- soc links  -->
-                    <div class="footer-links-left flex">
+                    <div class="footer-links-left footer-ling-left-none flex">
                         <a href="#">Home</a>
                         <a href="#">Discovery</a>
                         <a href="#">Photos</a>

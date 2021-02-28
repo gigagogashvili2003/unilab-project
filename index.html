@@ -5,19 +5,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>მთავარი</title>
-        <link rel="stylesheet" href="CSS/reset.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="CSS/style.css">
         <script src="https://kit.fontawesome.com/b3b21e6ed9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/fonts.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
     </head>
     <body>
-<!-- header -->
+        <!-- header -->
         <header class="header-wraper">
+            <div class="wifi-battery-time-block flex helvetica">
+                <div class="current-date" id="date"></div>
+                <div class="time-block" id="clock"></div>
+                <div class="wifi-battery-block">
+                    <img src="images/celluar.svg" alt="celluar">
+                    <img src="images/wifi.svg" alt="wifi">
+                    <img src="images/battery.svg" alt="battery">
+                </div>
+            </div>
             <div class="wrapper helvetica">
                 <nav class="wrapper helvetica">
                     <ul class="logo">
                         <a href="#"> LOGO </a>
+                        <a href="#"><img class="avatar-svg" src="images/avatar.svg" alt="avatar"></a>
                     </ul>
                     <ul id="menu" class="menu-ul">
                         <li ><a class="nav-a1 nav-a" href="#">HOME</a></li>
@@ -26,10 +36,11 @@
                         <li><a class="nav-a4 nav-a" href="#">CONTACT</a></li>
                         <li><a class="nav-a5 nav-a photos-a" href="#">PHOTOS</a></li>
                     </ul>
-                    <img class="girls-face" src="images/girls-face.svg" alt="girls-face">
                     <div id="burger-menu" class="burger-icon">
-                        <i class="fas fa-bars"></i>
+                        <img src="images/menu-icon.svg" alt="menu-icon">
                     </div>
+                    <img class="girls-face" src="images/girls-face.svg" alt="girls-face">
+
                 </nav>
             </div>       
         </header>
@@ -44,11 +55,11 @@
                             <div class="white-line"></div>
                             <h2 class="amazing-places-title helvetica">Amazing places in America to visit.</h2>
                             <p>For some reason — this country, this city, this neighborhood, this particular street —  is the place you are living a majority of your life in.</p>
-                            <a href="#"><div class="sec1-learn-more flex">learn more</div></a>
+                            <a href="contact.html" target="_blank"><div class="sec1-learn-more flex">learn more</div></a>
                         </div>
                 </div>
                 <!-- right  - block -->
-                <div class="section1-right-block">
+                <div class="section1-right-block flex">
                     <div class="section1-more-news">more news</div>
                     <div class="right-block-titles">
                         <div class="travel-block">
@@ -143,21 +154,21 @@
                             <img class="elephant-img" src="images/elephant.png" alt="elephant">
                             <h3 class="article-title">Small title</h3>
                             <div class="clock-block">
-                                <i class="far fa-clock"><span class="clock-title">3h ago by Worldnews</span></i>
+                                <i class="far fa-clock"><span class="clock-title">3h ago by <u>Worldnews</u></span></i>
                             </div>
                         </div>
                         <div class="section3-right-top-block section3-right-blocks-margin">
                             <img class="elephant-img" src="images/parrot.png" alt="parrot">
                             <h3 class="article-title">Small title</h3>
                             <div class="clock-block">
-                                <i class="far fa-clock"><span class="clock-title">4h ago by Days</span></i>
+                                <i class="far fa-clock"><span class="clock-title">4h ago by <u>Days</u></span></i>
                             </div>
                         </div>
                         <div class="section3-right-top-block none">
                             <img class="elephant-img" src="images/road-on-mountain.png" alt="road">
                             <h3 class="article-title">Small title</h3>
                             <div class="clock-block">
-                                <i class="far fa-clock"><span class="clock-title">3h ago by Monica</span></i>
+                                <i class="far fa-clock"><span class="clock-title">3h ago by<u>Monica</u></span></i>
                             </div>
                         </div>
                     </div>
@@ -170,7 +181,7 @@
                 <div class="footer-left-block flex">
                     <h4 class="footer-logo-title helvetica">logo</h4>
                     <!-- soc links  -->
-                    <div class="footer-links-left flex">
+                    <div class="footer-links-left footer-ling-left-none flex">
                         <a href="#">Home</a>
                         <a href="#">Discovery</a>
                         <a href="#">Photos</a>
@@ -209,5 +220,7 @@
             </div>
         </footer>
         <!-- main page ended :) -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="JS/script.js"></script>
     </body>
 </html>
